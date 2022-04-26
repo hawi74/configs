@@ -1,0 +1,114 @@
+{
+  "[elixir]": {
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "go.delveConfig": {
+    "dlvLoadConfig": {
+      "followPointers": true,
+      "maxVariableRecurse": 1,
+      "maxStringLen": 128,
+      "maxArrayValues": 64,
+      "maxStructFields": -1
+    },
+    "apiVersion": 2,
+    "showGlobalVariables": false,
+    "debugAdapter": "legacy",
+    "substitutePath": []
+  },
+  "editor.minimap.enabled": false,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<leader>", "f", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["C-d"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["C-u"]
+    },
+    {
+      "before": ["<leader>", "/"],
+      "after": ["<leader>", "<leader>", "/"]
+    },
+    {
+      "before": ["<leader>", "g", "R"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "g", "n"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "g", "p"],
+      "commands": ["editor.action.marker.prev"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "editor.smoothScrolling": true,
+  "workbench.editor.enablePreview": false,
+  "[xml]": {
+    "editor.defaultFormatter": "fabianlauer.vs-code-xml-format"
+  },
+  "javascript.format.semicolons": "insert",
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "explorer.autoReveal": "focusNoScroll"
+}
